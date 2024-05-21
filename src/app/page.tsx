@@ -169,8 +169,13 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <footer className="mb-4 text-center text-sm text-gray-400">
+      <footer className="mb-4 text-sm text-gray-400">
         <p>
+          <img
+            src="/github-mark-white.svg"
+            alt="GitHub Logo"
+            className="mr-1 inline h-4 w-4"
+          />
           You can find the code for this project on GitHub at{" "}
           <a
             href="https://github.com/velvet-shark/eipdirectory"
@@ -183,6 +188,11 @@ const HomePage = () => {
           . Feel free to submit pull requests or open issues there.
         </p>
         <p className="mt-2">
+          <img
+            src="/x-logo.svg"
+            alt="Twitter Logo"
+            className="mr-1 inline h-4 w-4"
+          />
           Follow me on Twitter{" "}
           <a
             href="https://twitter.com/velvet_shark"
