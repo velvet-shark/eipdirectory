@@ -15,10 +15,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <PlausibleProvider domain="eip.directory">
-      <html lang="en" className={`${GeistSans.variable}`}>
-        <body>{children}</body>
-      </html>
-    </PlausibleProvider>
+    <html lang="en" className={`${GeistSans.variable}`}>
+      <head>
+        <PlausibleProvider domain="eip.directory" />
+      </head>
+      <body>{children}</body>
+    </html>
   );
 }
