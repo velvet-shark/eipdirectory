@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <PlausibleProvider domain="example.com">
+    <PlausibleProvider domain="eip.directory">
       <html lang="en" className={`${GeistSans.variable}`}>
         <body>{children}</body>
       </html>
