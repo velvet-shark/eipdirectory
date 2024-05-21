@@ -35,7 +35,14 @@ const HomePage = () => {
     <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
       <div className="max-w-8xl container flex flex-col items-center justify-center gap-6 px-4 py-16">
         <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
-          EIP Directory
+          <div className="flex items-center">
+            <img
+              src="/eip-logo.svg"
+              alt="EIP Logo"
+              className=" mr-4 h-20 w-auto sm:h-[5rem]"
+            />
+            <span className="ml-4">EIP Directory</span>
+          </div>
         </h1>
         <div className="max-w-8xl container mx-auto px-4 py-8">
           <div className="overflow-x-auto">
