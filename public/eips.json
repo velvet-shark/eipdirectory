@@ -226,5 +226,24 @@
     "Links": "",
     "Requires": "1193",
     "Body": ""
+  },
+  {
+    "EIP": "ERC-6492",
+    "Number": "6492",
+    "Category": "ERC",
+    "Title": "Signature Validation for Predeploy Contracts",
+    "Custom name": "",
+    "Status": "Final",
+    "Created": "2023-02-10",
+    "Summary": "A way to verify a signature when the account is a smart contract that has not been deployed yet",
+    "Why is it important?": "It's impossible to validate signatures form ERC-4337 wallets until they are deployed. That means that new wallets can't sign transactions. That's a problem when we want to create a new wallet and start using it. ERC-6492 provides a way to do this. A dapp looks at a smart contract while it has not yet been deployed, simulates it and then gets its valid signature in order to sign and validate the signature of that contract.",
+    "Abstract": "Contracts can sign verifiable messages via [ERC-1271](https://github.com/ethereum/ERCs/blob/master/ERCS/eip-1271.md).\n\nHowever, if the contract is not deployed yet, [ERC-1271](https://github.com/ethereum/ERCs/blob/master/ERCS/eip-1271.md) verification is impossible, as you can't call the `isValidSignature` function on said contract.\n\nWe propose a standard way for any contract or off-chain actor to verify whether a signature on behalf of a given counterfactual contract (that is not deployed yet) is valid. This standard way extends [ERC-1271](https://github.com/ethereum/ERCs/blob/master/ERCS/eip-1271.md).",
+    "Motivation": "With the rising popularity of account abstraction, we often find that the best user experience for contract wallets is to defer contract deployment until the first user transaction, therefore not burdening the user with an additional deploy step before they can use their account. However, at the same time, many dApps expect signatures, not only for interactions, but also just for logging in.\n\nAs such, contract wallets have been limited in their ability to sign messages before their de-facto deployment, which is often done on the first transaction.\n\nFurthermore, not being able to sign messages from counterfactual contracts has always been a limitation of [ERC-1271](https://github.com/ethereum/ERCs/blob/master/ERCS/eip-1271.md).",
+    "Description": "",
+    "Official link": "https://eips.ethereum.org/EIPS/eip-6492",
+    "GitHub link": "https://github.com/ethereum/ercs/blob/master/ERCS/erc-6492.md",
+    "Links": "",
+    "Requires": "1271",
+    "Body": ""
   }
 ]
