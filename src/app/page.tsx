@@ -57,7 +57,7 @@ const HomePage = () => {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
-      <div className="max-w-8xl container flex flex-col items-center justify-center gap-6 px-4 py-16">
+      <div className="max-w-8xl container flex flex-col items-center justify-center gap-6 px-4 py-8">
         <h1 className="custom-h1 text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
           <div className="flex items-center">
             <img
@@ -169,6 +169,32 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+      <footer className="mb-4 text-center text-sm text-gray-400">
+        <p>
+          You can find the code for this project on GitHub at{" "}
+          <a
+            href="https://github.com/velvet-shark/eipdirectory"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-400 hover:underline"
+          >
+            https://github.com/velvet-shark/eipdirectory
+          </a>
+          . Feel free to submit pull requests or open issues there.
+        </p>
+        <p className="mt-2">
+          Follow me on Twitter{" "}
+          <a
+            href="https://twitter.com/velvet_shark"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-400 hover:underline"
+          >
+            @velvet_shark
+          </a>{" "}
+          for more web3 and blockchain content!
+        </p>
+      </footer>
     </main>
   );
 };
