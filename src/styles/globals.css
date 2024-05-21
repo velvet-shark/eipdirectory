@@ -9,3 +9,28 @@ body {
 .custom-h1 {
   line-height: 1.1;
 }
+
+p {
+  margin-bottom: 0.5em;
+}
+
+code {
+  background-color: #f0f0f0;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+}
+a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+ul {
+  margin-left: 1.5em;
+}
+
+ul > li {
+  margin-bottom: 0.5em;
+  padding-left: 0.5em;
+  list-style-type: disc;
+  line-height: 1em;
+}
