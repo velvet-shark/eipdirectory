@@ -14,7 +14,7 @@
     "Description": "",
     "Official link": "https://eips.ethereum.org/EIPS/eip-1271",
     "GitHub link": "https://github.com/ethereum/ercs/blob/master/ERCS/erc-1271.md",
-    "Links": "",
+    "Links": "https://eip1271.io/",
     "Requires": "",
     "Body": ""
   },
@@ -33,7 +33,7 @@
     "Description": "",
     "Official link": "https://eips.ethereum.org/EIPS/eip-4337",
     "GitHub link": "https://github.com/ethereum/ercs/blob/master/ERCS/erc-4337.md",
-    "Links": "",
+    "Links": "https://www.erc4337.io/",
     "Requires": "7562",
     "Body": ""
   },
@@ -71,7 +71,7 @@
     "Description": "",
     "Official link": "https://eips.ethereum.org/EIPS/eip-5792",
     "GitHub link": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-5792.md",
-    "Links": "",
+    "Links": "https://www.eip5792.xyz/",
     "Requires": "",
     "Body": ""
   },
@@ -128,7 +128,7 @@
     "Description": "",
     "Official link": "https://eips.ethereum.org/EIPS/eip-7579",
     "GitHub link": "https://github.com/ethereum/ERCs/blob/master/ERCS/erc-7579.md",
-    "Links": "",
+    "Links": "https://erc7579.com/",
     "Requires": "165, 1271, 2771, 4337",
     "Body": ""
   },
@@ -147,7 +147,7 @@
     "Description": "",
     "Official link": "https://eips.ethereum.org/EIPS/eip-6900",
     "GitHub link": "https://github.com/ethereum/ERCs/blob/master/ERCS/erc-6900.md",
-    "Links": "",
+    "Links": "https://www.erc6900.io/",
     "Requires": "165, 4337",
     "Body": ""
   },
@@ -223,7 +223,7 @@
     "Description": "",
     "Official link": "https://eips.ethereum.org/EIPS/eip-6963",
     "GitHub link": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6963.md",
-    "Links": "",
+    "Links": "https://eip6963.org/",
     "Requires": "1193",
     "Body": ""
   },
