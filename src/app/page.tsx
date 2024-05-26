@@ -116,14 +116,16 @@ const HomePage = () => {
                     </tr>
                     <tr className="border-b-2  border-purple-500 border-opacity-50 bg-white py-4">
                       <td className="border-b px-4 py-2 align-top text-gray-800">
-                        <a
-                          href={eip["Official link"]}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-blue-600 hover:underline"
-                        >
-                          Official Link
-                        </a>
+                        {eip["Official link"] && (
+                          <a
+                            href={eip["Official link"]}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-600 hover:underline"
+                          >
+                            Official Link
+                          </a>
+                        )}
                         <br />
                         <a
                           href={eip["GitHub link"]}
@@ -133,6 +135,20 @@ const HomePage = () => {
                         >
                           GitHub Link
                         </a>
+                        <br />
+                        {eip.Links && (
+                          <a
+                            href={eip.Links}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-600 hover:underline"
+                          >
+                            {eip.Links.replace(/^https?:\/\//, "").replace(
+                              /\/$/,
+                              "",
+                            )}
+                          </a>
+                        )}
                       </td>
                       <td
                         colSpan={2}

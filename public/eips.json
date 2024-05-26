@@ -245,5 +245,24 @@
     "Links": "",
     "Requires": "1271",
     "Body": ""
+  },
+  {
+    "EIP": "ERC-7677",
+    "Number": "7677",
+    "Category": "ERC",
+    "Title": "Paymaster Web Service Capability",
+    "Custom name": "",
+    "Status": "Draft",
+    "Created": "2024-04-03",
+    "Summary": "A way for apps to communicate with smart wallets about paymaster web services",
+    "Why is it important?": "ERC-7677 proposes an EIP-5792-compliant capability for paymaster web service communication by proposing a standardized communication protocol for wallets and ERC-4337 paymaster web services.\n\nThis ultimately unlocks the ability for app developers to sponsor their users' transactions.",
+    "Abstract": "With [EIP-5792](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-5792.md), apps can communicate with wallets about advanced features via capabilities. This proposal defines a capability that allows apps to request that [ERC-4337](https://github.com/ethereum/ercs/blob/master/ERCS/erc-4337.md) wallets communicate with a specified paymaster web service. To support this, we also define a standardized API for paymaster web services.",
+    "Motivation": "App developers want to start sponsoring their users' transactions using paymasters. Paymasters are commonly used via web services. However, there is currently no way for apps to tell wallets to communicate with a specific paymaster web service. Similarly, there is no standard for how wallets should communicate with these services. We need both a way for apps to tell wallets to communicate with a specific paymaster web service and a communication standard for wallets to do so.",
+    "Description": "",
+    "Official link": "",
+    "GitHub link": "https://github.com/ethereum/ERCs/pull/360/files",
+    "Links": "https://www.erc7677.xyz/",
+    "Requires": "4337, 5792",
+    "Body": ""
   }
 ]
