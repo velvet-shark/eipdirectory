@@ -57,18 +57,20 @@ const HomePage = () => {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
-      <div className="max-w-8xl container flex flex-col items-center justify-center gap-6 px-4 py-8">
-        <h1 className="custom-h1 text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
+      <div className="sm:max-w-8xl flex w-full flex-col items-center justify-center gap-4 py-8">
+        <h1 className="custom-h1 px-4 text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
           <div className="flex items-center">
             <img
               src="/eip-logo.svg"
               alt="EIP Logo"
               className=" mr-4 h-20 w-auto sm:h-[5rem]"
             />
-            <span className="custom-h1 ml-4">EIP Directory</span>
+            <span className="ml-1 text-[2.5rem] lg:text-[4rem]">
+              EIP Directory
+            </span>
           </div>
         </h1>{" "}
-        <p className="mt-4 max-w-6xl text-xl text-gray-200">
+        <p className="text-md max-w-6xl px-4 text-gray-200  lg:mt-2 lg:text-xl">
           Welcome to the Ethereum Improvement Proposal (EIP) Directory. Here you
           can find a list of important, noteworthy, interesting EIPs. Click on
           the <strong>Abstract</strong> and <strong>Motivation</strong> links to
@@ -76,18 +78,27 @@ const HomePage = () => {
           <strong> Why is it important?</strong> section that explains why the
           proposal matters and why it is included in this list.
         </p>
-        <div className="max-w-8xl container mx-auto px-4 py-8">
+        <div className="lg:max-w-8xl container mx-auto w-full lg:px-4 lg:py-2">
           <div className="overflow-x-auto">
-            <table className="min-w-full divide-y divide-gray-200 overflow-hidden rounded-lg border border-gray-200">
+            <table className="min-w-full divide-y divide-gray-200 overflow-hidden border border-gray-200 lg:rounded-lg">
               <thead>
                 <tr className="bg-gray-100">
-                  <th className="border-b px-4 py-2 text-left align-top text-gray-800">
+                  <th
+                    className="border-b px-4 py-2 text-left align-top text-gray-800"
+                    style={{ minWidth: "180px" }}
+                  >
                     Name
                   </th>
-                  <th className="border-b px-4 py-2 text-left align-top text-gray-800">
+                  <th
+                    className="border-b px-4 py-2 text-left align-top text-gray-800"
+                    style={{ minWidth: "150px" }}
+                  >
                     Description
                   </th>
-                  <th className="border-b px-4 py-2 text-left align-top text-gray-800">
+                  <th
+                    className="border-b px-4 py-2 text-left align-top text-gray-800"
+                    style={{ minWidth: "300px" }}
+                  >
                     Why is it important?
                   </th>
                   <th className="border-b px-4 py-2 text-left align-top text-gray-800">
@@ -185,7 +196,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <footer className="mb-4 text-sm text-gray-400">
+      <footer className="mb-4 px-4 py-2 text-sm text-gray-400">
         <p>
           <img
             src="/github-mark-white.svg"
