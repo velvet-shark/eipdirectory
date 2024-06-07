@@ -264,5 +264,24 @@
     "Links": "https://www.erc7677.xyz/",
     "Requires": "4337, 5792",
     "Body": ""
+  },
+  {
+    "EIP": "EIP-5806",
+    "Number": "5806",
+    "Category": "Core",
+    "Title": "Delegate transaction",
+    "Custom name": "",
+    "Status": "Draft",
+    "Created": "2022-10-20",
+    "Summary": "Adds a new transaction type that allows a EOAs to execute arbitrary code through delegation",
+    "Why is it important?": "Introduces a new transaction type that allows Externally Owned Accounts (EOAs) to execute arbitrary code using a delegate-call-like mechanism. This is significant because it extends the capabilities of EOAs, which are traditionally limited to deploying contracts and sending \"call\" transactions, by enabling them to perform more complex operations similar to those of smart contracts.\n\nEIP-5806 is noteworthy for its potential to significantly enhance the functionality and security of EOAs, paving the way for more complex and secure interactions on the Ethereum network.",
+    "Abstract": "This EIP adds a new transaction type that allows EOAs to execute arbitrary code using a delegate-call-like mechanism.",
+    "Motivation": "EOA are the most widely used type of account, yet their ability to perform operations is limited to deploying contracts and sending \"call\" transactions. It is currently not possible for an EOA to execute arbitrary code, which greatly limits the interactions users can have with the blockchain. Account abstraction has been extensively discussed but the path toward mainstream adoption is still unclear. Some approaches, such as [ERC-4337](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4337.md) hope to improve the usability of smart wallets, without addressing the issue of smart wallet support by applications.\n\nWhile smart contract wallets have a lot to offer in terms of UX, it is unlikely that all users will migrate any time soon because of the associated cost and the fact that some EOAs have custody of non-transferable assets.\n\nThis EIP proposes an approach to allow the execution of arbitrary code by EOAs, with minimal change over the EVM, and using the same security model users are used to. By allowing EOAs to perform delegate calls to a contract (similarly to how contracts can delegate calls to other contracts using [EIP-7](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7.md)), EOAs will be able to have more control over what operations they want to execute. This proposal's goal is NOT to provide an account abstraction primitive.\n\nBy performing a delegate call to a multicall contract (such as the one deployed to `0xcA11bde05977b3631167028862bE2a173976CA11`), EOAs would be able to batch multiple transactions into a single one (being the `msg.sender` of all the sub calls). This would provide a better UX for users that want to interact with protocols (no need for multiple transactions, with variable gas prices and 21k gas overhead) and increase the security of such interactions (by avoiding unsafe token approvals being exploited between an `approval` and the following `transferFrom`).\n\nOther unforeseen logic could be implemented in smart contracts and used by EOA. This includes emitting events.\n\nThis EIP doesn't aim to replace other account abstraction proposals. It hopes to be an easy-to-implement alternative that would significantly improve the user experience of EOA owners in the near future.",
+    "Description": "",
+    "Official link": "https://eips.ethereum.org/EIPS/eip-5806",
+    "GitHub link": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-5806.md",
+    "Links": "https://www.erc7677.xyz/",
+    "Requires": "2718, 2930",
+    "Body": ""
   }
 ]
