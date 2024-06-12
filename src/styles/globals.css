@@ -31,8 +31,8 @@ ul {
 }
 
 ul > li {
-  margin-bottom: 0.5em;
+  margin-bottom: 0em;
   padding-left: 0.5em;
   list-style-type: disc;
-  line-height: 1em;
+  line-height: 1.5em;
 }
